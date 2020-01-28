@@ -1,0 +1,31 @@
+
+.footer {
+  color: #868e96;
+  background-color: #343a40;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  // margin-top: 5rem;
+  text-align: center;
+  width: 100vw;
+  .apps{
+    cursor: pointer;
+  }
+  .social{
+    cursor: pointer;
+    margin-left: 0.4rem;
+  }
+  .hr{
+    border-top: 1px solid white;
+    width: 85vw;
+    margin: 1rem auto;
+  }
+  @media screen and (max-width: 1000px){
+    .hr{
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+ 
+
+}
