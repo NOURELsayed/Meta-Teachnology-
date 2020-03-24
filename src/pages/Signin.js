@@ -7,7 +7,6 @@ const SignIn = () => {
     return(
         <Container style={{paddingTop: "10rem",minHeight: "90vh"}} className="signin">
             <NavBar />
-            {/* <h1>SignIn</h1> */}
             <SignInForm/>
         </Container>
     )

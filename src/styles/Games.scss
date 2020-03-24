@@ -1,3 +1,138 @@
-.game-page-title{
-    padding-top: 60px;
+.gamePage {
+  padding: 0;
+  overflow: hidden;
+}
+.game-page-title {
+  padding-top: 60px;
+}
+.gamePage-cardBody {
+  text-align: left;
+  padding: 20px;
+  padding-top: 1.5rem;
+}
+.logoimage {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  right: 200px;
+  top: 148px;
+}
+.gamePage-cardBody {
+  // padding: 2rem 1rem 0.5rem 7rem;
+}
+.storeBtn {
+  margin-right: 5%;
+}
+.btns {
+  button {
+    margin: 1%;
+    height: 30px;
+    width: 90px;
+    border-radius: 18px;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+  }
+}
+
+.gameCard{
+  border-radius: 25px;
+}
+@media (max-width: 990px) {
+  .gamePage-cardBody {
+    // text-align: center;
+    padding: 20px;
+    padding-top: 1.5rem;
+  }
+  .moreInfonbtn {
+    height: 25px;
+    width: 65px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+    margin: -10px 0 50px 0;
+  }
+  .logoimage {
+    position: absolute;
+    min-width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
+    right: 13.5%;
+    top: 149px;
+  }
+  .btns {
+    button {
+      margin: 5% 5% 0 2%;
+      height: 30px;
+      width: 90px;
+      border-radius: 18px;
+      text-align: center;
+      padding: 0;
+      font-size: 14px;
+    }
+  }
+  .gameCard{
+    border-radius: 25px;
+  }
+}
+@media (min-width: 991px) {
+  .gamePage-cardBody {
+    // text-align: center;
+    padding: 20px;
+    padding-top: 1rem;
+  }
+  .moreInfonbtn {
+    height: 25px;
+    width: 65px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+
+  }
+  .logoimage {
+    position: absolute;
+    min-width: 125px;
+    min-height: 125px;
+    border-radius: 50%;
+    right: 9.5%;
+    top: 120px;
+  }
+  .gameCard{
+    border-radius: 25px;
+  } 
+}
+
+@media (min-width: 2000px) {
+  .gamePage-cardBody {
+    // text-align: center;
+    padding: 20px;
+    padding-top: 1rem;
+  }
+  .moreInfonbtn {
+    height: 25px;
+    width: 65px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+
+  }
+  .logoimage {
+    position: absolute;
+    min-width: 125px;
+    min-height: 125px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    right: 7.5%;
+    top: 115px;
+  }
+  .gameCard{
+    border-radius: 25px;
+  }
 }

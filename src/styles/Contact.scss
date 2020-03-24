@@ -1,0 +1,32 @@
+.contactPage{
+  padding: 0;
+}
+.ourOffice-cover {
+  background-image: url(E:\projects\Meta-Teachnology-\src\assets\cover-img.jpg);
+  color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  height: calc(100vh - 200px);
+  max-height: 100%;
+//   h1 {
+//       padding: 10rem;
+//   }
+//   p{
+//     padding: 10rem;
+//   }
+}
+.ourOffice {
+  background-image: url(/static/media/background.4bd44909.jpg);
+  color: #fff;
+  align-content: center;
+  padding: 5rem 3rem 3rem;
+}

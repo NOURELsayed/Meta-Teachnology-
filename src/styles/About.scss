@@ -1,0 +1,118 @@
+
+
+.aboutPage {
+  padding: 0;
+}
+
+.mainCard {
+  // height: 452px;
+  // max-width: 20rem;
+  height: 640px;
+  max-width: 22rem;
+  border-radius: 25px;
+  background-image: url(../assets/2.jpg);
+}
+.frontCard {
+  border-radius: 25px;
+  // max-width: 20rem;
+  // height: 20rem;
+  height: 640px;
+  max-width: 22rem;
+  position: absolute;
+}
+
+.frontCard p {
+  background-color: #1d2120;
+  font-size: 1.3rem;
+  max-width: 20rem;
+  height: 5rem;
+  border-top: 5px solid gray;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backCard {
+  background-image: url(../assets/background.jpg);
+  transform: rotateY(90deg);
+  // max-width: 20rem;
+  // height: 453px;
+  height: 640px;
+  max-width: 22rem;
+  text-align: left;
+  box-sizing: border-box;
+  color: #000000;
+  border-radius: 25px;
+  .avatar {
+    position: relative;
+    margin-top: -60px;
+    z-index: 100;
+  }
+  .avatar img {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    top: 2071px;
+    left: 1144px;
+  }
+p{
+  margin-top: 15%;
+}
+#b {
+  quotes:  "“" ;
+font-size: large;
+}
+}
+.backCard button {
+  // display: block;
+  // color: gray;
+  // line-height: .9;
+  // text-decoration: none;
+  // font-size: 1.5rem;
+  // border: 1px solid #707070;
+  border-radius: 25px;
+  opacity: 1;
+  width: 6rem;
+  margin: 0.5rem;
+  // display: block;
+  margin-right: 1rem;
+}
+.backCard button:hover {
+  background-color: gray;
+  // border-radius: 5px;
+  color: #1d2120;
+  animation: text-animation 1s;
+}
+.mainCard:hover .frontCard {
+  animation: twirl 0.35s forwards ease-in;
+}
+.mainCard:hover .backCard {
+  animation: twirl 0.35s 0.35s forwards ease-in reverse;
+}
+@keyframes twirl {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(90deg);
+  }
+}
+
+
+
+
+.carousel-control-prev-icon{
+  color: red;
+}
+
+
+
+  @media (min-width: 300px) { 
+    .mainCard {
+      height: 640px;
+      max-width: 22rem;  
+      margin-top: 20px;
+    }
+   }

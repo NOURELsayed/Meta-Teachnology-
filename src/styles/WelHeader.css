@@ -1,7 +1,7 @@
 /* PARALLAX */
 
 .keyart, .keyart_layer {
-	height: 850px;
+	height: 950px;
 	/* width: 40%; */
 	left: 0;
 }
@@ -14,7 +14,7 @@
 }
 
 #nonparallax {
-	background-image: url('../assets/images/parallax/keyart-mobile.jpg');
+	/* background-image: url('../assets/images/parallax/keyart-mobile.jpg'); */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
@@ -28,8 +28,8 @@
 
 .keyart_layer {
 	background-position: bottom center;
-	background-size: auto 1038px;
-	background-repeat: repeat-x;
+	/* background-size: auto 1038px;
+	background-repeat: repeat-x; */
 	width: 100%;
 	position: absolute;
 }
@@ -37,56 +37,56 @@
 	position: fixed;
 }
 	#keyart-0 {
-		background-image: url('../assets/images/parallax/parallax0.png');
-		background-color: #ffaf1b;
+		/* background-image: url('../assets/images/parallax/parallax0.png'); */
+		/* background-color: #ffaf1b; */
 	}
-	#keyart-1 {
-		background-image: url('../assets/images/parallax/parallax1.png');
-	}
+	 /* #keyart-1 {
+		background-image: url('../assets/Newfolder/8.png');
+	} 
 	#keyart-2 {
-		background-image: url('../assets/images/parallax/parallax2.png');
+		background-image: url('../assets/Newfolder/7.png');
 	}
 	#keyart-3 {
-		background-image: url('../assets/images/parallax/parallax3.png');
-	}
-	#keyart-4 {
-		background-image: url('../assets/images/parallax/parallax4.png');
-	}
+		background-image: url('../assets/Newfolder/6.png');
+	} 
+	 #keyart-4 {
+		background-image: url('../assets/Newfolder/05.png');
+	} */
 	#keyart-5 {
-		background-image: url('../assets/images/parallax/parallax5.png');
+		background-image: url('../assets/img/04.png');
 	}
 	#keyart-6 {
-		background-image: url('../assets/images/parallax/parallax6.png');
+		background-image: url('../assets/img/03.png');
 	}
-	#keyart-7 {
-		background-image: url('../assets/images/parallax/parallax7.png');
-	}
+	 #keyart-7 {
+		background-image: url('../assets/img/02.png');
+	} 
 	#keyart-8 {
-		background-image: url('../assets/images/parallax//parallax8.png');
+		background-image: url('../assets/img/01.png');
 	}
 	#keyart-scrim {
-		background-color: #ffaf00;
+		/* background-color: #ffaf00; */
 		opacity: 0;
 	}
-/* #main{
+#main{
 	min-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
     margin-left: auto;
     margin-right: auto;
     z-index: 99;
     position: relative;
-	background-color: #210002;
+	background-color: #080821;
 
 
 }
 #maincontain {
-    background-color: #210002;
-    position: relative;
+    background-color: #080821;
+    position: absolute;
 	z-index: 98;
 	width: 100%;
-} */
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
+	/* height: 1590px; */
+	overflow: hidden;
+}
+/* @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
    	#keyart-0 {
 		background-image: url('../assets/images/parallax/parallax0@2x.png');
 		background-color: #ffaf1b;
@@ -116,7 +116,7 @@
 	#keyart-8 {
 		background-image: url('../assets/images/parallax/parallax8@2x.png');
 	}
-}
+} */
 @media (min-width: 601px) {
 
 	#nonparallax {
@@ -129,16 +129,14 @@
 }
 @media (max-width: 600px) {
 
-	#nonparallax {
+	/* #nonparallax {
 		display: block;
-	}
+	} */
 	#parallax {
 		display: none;
 	}
 
 	#main {
-		padding-left: 10px;
-		padding-right: 10px;
 		padding-top: 70px;
 	}
 

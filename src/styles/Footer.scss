@@ -1,13 +1,11 @@
 
 .footer {
-  color: #868e96;
+  color: #fff;
   background-color: #343a40;
-  position:fixed;
-  bottom: 0;
-  left: 0;
-  // margin-top: 5rem;
   text-align: center;
-  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
   .apps{
     cursor: pointer;
   }
@@ -28,4 +26,8 @@
   }
  
 
+}
+
+@media screen and (min-width: 768px) { 
+  
 }

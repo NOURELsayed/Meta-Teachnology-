@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-// import FooterCopyright from "../components/FooterCopyright";
 import Footer from "../components/Footer";
 import img from "../assets/1.jpeg";
 import '../styles/news.scss'
-export default function News() {
+const News = () => {
   return (
     <Container>
       <Row  className='news-imgs'>
@@ -20,7 +19,7 @@ export default function News() {
         </Col>
       </Row>
       <Footer />
-      {/* <FooterCopyright /> */}
     </Container>
   );
 }
+export default News;

@@ -1,21 +1,183 @@
-
-.welNav-feature{
-    color: red !important;
- 
+.welPage {
+  position: absolute;
+  padding: 0;
 }
-  .welHeader{
-      margin-top: 2rem;
-      width: 15rem;
-      padding: .5rem;
-  
+.welNav-feature {
+  color: red !important;
+}
+.welHeader {
+  margin-top: 2rem;
+  width: 15rem;
+  padding: 0.5rem;
+}
+.welbtns {
+  width: 7.5rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+.ourVision {
+  color: #fff;
+  background-image: url(../assets/background.jpg);
+  padding: 5rem 3rem 3rem;
+  align-content: center;
+}
+.gameCards-welPage {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @media screen and (min-width: 990px) {
   }
-  .welbtns{
-    width: 7.5rem;
-    margin-top: 2rem;
-    padding: .5rem;
-    margin-right: .5rem;
+}
+.JoinUs-welPage {
+  // background-image: url(/static/media/background.4bd44909.jpg);
+  color: #fff;
+  align-content: center;
+  padding: 5rem 3rem 3rem;
+}
+@media screen and (max-width: 600px) {
+  .responsive {
+    max-width: 22vw;
+    height: auto;
+    padding-top: 1rem;
+    align-items: center;
   }
-  .welCover{
-      // margin-top: 10rem;
+}
+.ContactForm {
+  max-width: 25rem;
+  padding: 1rem;
+  border: lightgrey 0.5px solid;
+  // box-shadow: 10px 10px 2px lightgrey;
+  border-radius: 5px;
+}
+
+.contactFormSection {
+  // background-image: url(../assets/background.jpg);
+  color: #fff;
+  padding: 0;
+}
+
+.main-card {
+  height: 452px;
+  max-width: 20rem;
+  // border: 5px solid gray;
+  border-radius: 5px;
+  background-image: url(../assets/background.jpg);
+}
+.card-front {
+  // background-color: lightpink;
+  max-width: 20rem;
+  height: 20rem;
+  position: absolute;
+}
+
+.card-front p {
+  background-color: #1d2120;
+  font-size: 1.3rem;
+  max-width: 20rem;
+  height: 5rem;
+  border-top: 5px solid gray;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-back {
+  background-image: url(../assets/background.jpg);
+  transform: rotateY(90deg);
+  max-width: 20rem;
+  height: 20rem;
+  text-align: left;
+  box-sizing: border-box;
+  color: #ffffff;
+  .avatar {
+    position: relative;
+    margin-top: -60px;
+    z-index: 100;
+  }
+  .avatar img {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    top: 2071px;
+    left: 1144px;
 
   }
+  
+}
+.card-back button {
+  // display: block;
+  // color: gray;
+  // line-height: .9;
+  // text-decoration: none;
+  // font-size: 1.5rem;
+  // border: 1px solid #707070;
+  border-radius: 25px;
+  opacity: 1;
+  width: 6rem;
+  margin: 0.5rem;
+  // display: block;
+  margin-right: 1rem;
+}
+.card-back button:hover {
+  background-color: gray;
+  // border-radius: 5px;
+  color: #1d2120;
+  animation: text-animation 1s;
+}
+.main-card:hover .card-front {
+  animation: twirl 0.35s forwards ease-in;
+}
+.main-card:hover .card-back {
+  animation: twirl 0.35s 0.35s forwards ease-in reverse;
+}
+@keyframes twirl {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(90deg);
+  }
+}
+/* contact section styling */
+.textColor{
+  color:#fff;
+}
+.pullDown a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.7s;
+}
+
+.pullDown a:hover:before
+{
+    height: 100%;
+}
+.navcontainer
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	// padding: 10em 3em;
+	text-align: center;
+}
+
+.navcontainer a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
