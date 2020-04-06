@@ -1,18 +1,14 @@
 import React from "react";
-import { Button, Row, Container, Col } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import "../styles/welcome.scss";
 const JoinUs = () => {
   return (
-    <Container fluid >
-      <Row className="JoinUs-welPage text-center">
-      <Col >
+    <Container  className="JoinUs-welPage text-center">
           <h2>Join Now</h2>
-          <p style={{fontSize:"1.5vw"}}>
+          <p style={{fontSize:"1rem"}}>
           Keep your MetaStudios games safe and stay connected.
           </p>
           <Button variant="secondary">Join Now</Button>
-        </Col>
-      </Row>
     </Container>
   );
 }

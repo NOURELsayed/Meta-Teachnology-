@@ -25,7 +25,7 @@ const initialState = {
 export const AuthContext = createContext();
 
 const AuthContextProvider = props => {
-  const [auth, setAuth] = useState(initialState);
+  const [auth] = useState(initialState);
   let history = useHistory();
   console.log(history);
 

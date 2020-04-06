@@ -3,20 +3,15 @@
 .aboutPage {
   padding: 0;
 }
-
 .mainCard {
-  // height: 452px;
-  // max-width: 20rem;
-  height: 640px;
+  height: 550px;
   max-width: 22rem;
   border-radius: 25px;
   background-image: url(../assets/2.jpg);
 }
 .frontCard {
   border-radius: 25px;
-  // max-width: 20rem;
-  // height: 20rem;
-  height: 640px;
+  height: 550px;
   max-width: 22rem;
   position: absolute;
 }
@@ -35,9 +30,7 @@
 .backCard {
   background-image: url(../assets/background.jpg);
   transform: rotateY(90deg);
-  // max-width: 20rem;
-  // height: 453px;
-  height: 640px;
+  height: 550px;
   max-width: 22rem;
   text-align: left;
   box-sizing: border-box;
@@ -66,22 +59,14 @@ font-size: large;
 }
 }
 .backCard button {
-  // display: block;
-  // color: gray;
-  // line-height: .9;
-  // text-decoration: none;
-  // font-size: 1.5rem;
-  // border: 1px solid #707070;
   border-radius: 25px;
   opacity: 1;
   width: 6rem;
   margin: 0.5rem;
-  // display: block;
   margin-right: 1rem;
 }
 .backCard button:hover {
   background-color: gray;
-  // border-radius: 5px;
   color: #1d2120;
   animation: text-animation 1s;
 }
@@ -103,16 +88,22 @@ font-size: large;
 
 
 
-.carousel-control-prev-icon{
-  color: red;
-}
-
-
-
   @media (min-width: 300px) { 
     .mainCard {
-      height: 640px;
+      height: 550px;
       max-width: 22rem;  
       margin-top: 20px;
     }
+   }
+
+   .slider-container { 
+     width: 100%;
+     margin-bottom: 8rem;
+     margin-top: 5rem;
+     .slider{
+      .slick-prev:before,
+      .slick-next:before {
+          color:rgb(26, 22, 22); 
+      }
+     }
    }

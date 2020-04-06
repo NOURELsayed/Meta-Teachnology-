@@ -1,30 +1,27 @@
 import React from "react";
-import "../styles/WelHeader.css";
 import OurVision from "./Our_vision";
 import Footer from "./Footer";
-import GamesCards  from './GamesCards'
-import JoinUs from './JoinUs'
-import ContactForm  from './ContactForm'
-import NavBar from './welcomeNav'
-const Welcomecover = () => {
-  const castParallax = () => {
-    window.addEventListener("scroll", function(event) {
-      let top = this.pageYOffset;
+import GamesCards from "./GamesCards";
+// import JoinUs from "./JoinUs";
+import ContactForm from "./ContactForm";
+import "../styles/WelHeader.css";
 
-      let layers = document.getElementsByClassName("parallax");
-      let layer, speed;
-      for (let i = 0; i < layers.length; i++) {
-        layer = layers[i];
-        speed = layer.getAttribute("data-speed");
-        let yPos = -((top * speed) / 100);
-        layer.setAttribute(
-          "style",
-          "transform: translate3d(0px, " + yPos + "px, 0px)"
-        );
-      }
-    });
-  };
-  document.body.onload = castParallax();
+const Welcomecover = () => {
+  window.addEventListener("scroll", function(event) {
+    let top = this.pageYOffset;
+
+    let layers = document.getElementsByClassName("parallax");
+    let layer, speed;
+    for (let i = 0; i < layers.length; i++) {
+      layer = layers[i];
+      speed = layer.getAttribute("data-speed");
+      let yPos = -((top * speed) / 100);
+      layer.setAttribute(
+        "style",
+        "transform: translate3d(0px, " + yPos + "px, 0px)"
+      );
+    }
+  });
 
   return (
     <div>
@@ -75,21 +72,20 @@ const Welcomecover = () => {
       </div>
       <div id="maincontain">
         <div id="main">
-          <div >
-            <NavBar/>
+          <div>
+            <div style={{margin: "7rem auto 0 auto"}}>
             <OurVision />
-            <br />
+            </div>
+            <div style={{margin: "10rem auto 0 auto"}}>
             <GamesCards />
-            <br />
-            <JoinUs />
-            <br />
+            </div>
+            {/* <JoinUs /> */}
             <ContactForm />
-            <br/>
             <Footer />
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 export default Welcomecover;

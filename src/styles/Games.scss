@@ -5,68 +5,57 @@
 .game-page-title {
   padding-top: 60px;
 }
-.gamePage-cardBody {
-  text-align: left;
-  padding: 20px;
-  padding-top: 1.5rem;
-}
-.logoimage {
-  position: absolute;
-  max-width: 100px;
-  max-height: 100px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  right: 200px;
-  top: 148px;
-}
-.gamePage-cardBody {
-  // padding: 2rem 1rem 0.5rem 7rem;
-}
-.storeBtn {
-  margin-right: 5%;
-}
-.btns {
-  button {
-    margin: 1%;
-    height: 30px;
-    width: 90px;
-    border-radius: 18px;
-    text-align: center;
-    padding: 0;
-    font-size: 14px;
-  }
-}
 
-.gameCard{
-  border-radius: 25px;
-}
-@media (max-width: 990px) {
-  .gamePage-cardBody {
-    // text-align: center;
-    padding: 20px;
-    padding-top: 1.5rem;
-  }
-  .moreInfonbtn {
-    height: 25px;
-    width: 65px;
-    border-radius: 12px;
-    text-align: center;
-    padding: 0;
-    font-size: 14px;
-    margin: -10px 0 50px 0;
-  }
-  .logoimage {
-    position: absolute;
-    min-width: 90px;
-    min-height: 90px;
-    border-radius: 50%;
-    right: 13.5%;
-    top: 149px;
-  }
-  .btns {
-    button {
-      margin: 5% 5% 0 2%;
+
+
+// Games Cards Styling
+.gameCard-container{
+  max-width: 90rem;
+  .gameCard{
+    background-color: lightblue;
+    border-radius: 5px !important;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    position: relative;
+    .slider-img{
+      height: 450px;
+      width: 100%;
+      align-content: center;
+      border-radius: 5px !important;
+    }
+    .gamePage-cardBody {
+      text-align: left;
+      padding: 20px;
+      padding-top: 1.5rem;
+    }
+    .gamePage-overlay{
+      text-align: left;
+      padding: 20px;
+      padding-top: 1.5rem;
+      height: 170px;
+      background-color: rgba(0, 0, 0, 0.65);
+      border-bottom-left-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+      position: absolute;
+      color: white;
+      top: 280px;
+      left:0;
+      padding-left: 3rem; 
+    }
+    .logoimage {
+      position: absolute;
+      max-width: 120px;
+      max-height: 120px;
+      top: -60px;
+      right: 220px;
+      
+    }
+    .ios-btn,
+    .play-btn
+     {
+      position: absolute;
+      right: 200px;
+      top: 120px;
       height: 30px;
       width: 90px;
       border-radius: 18px;
@@ -74,65 +63,101 @@
       padding: 0;
       font-size: 14px;
     }
-  }
-  .gameCard{
-    border-radius: 25px;
+    .ios-btn{
+      right: 190px;
+      top: 120px;
+    }
+    .play-btn{
+      right: 290px;
+      top: 120px;
+    }
+  
+
+//////////////////////// Media Queries ///////////////
+    @media  (max-width: 1050px) {
+        .logoimage {
+          position: absolute;
+          right: 50px;
+          top: -60px;
+        } 
+        .ios-btn {
+          position: absolute;
+          right: 20px;
+          top: 120px;
+        }
+        .play-btn {
+          position: absolute;
+          right: 120px;
+          top: 120px;
+        }
+    }
+
+    @media  (max-width: 910px) {
+      .logoimage {
+        position: absolute;
+        right: 44%;
+        top: -60px;
+      } 
+    }
+
+    @media  (max-width: 600px) {
+      .logoimage {
+        position: absolute;
+        right: 20px;
+        top: -60px;
+      } 
+     
+    }
+
+    @media  (max-width: 455px) {
+
+      .gamePage-overlay {
+        padding-left: 10px; 
+      }
+    }
+    
+    @media  (max-width: 418px) {
+      .logoimage {
+        max-width: 95px;
+        max-height: 95px;
+        position: absolute;
+        right: 20px;
+        top: -48.5px;
+      }
+      .ios-btn {
+        position: absolute;
+        right: 10px;
+        top: 134px;
+      }
+      .play-btn {
+        position: absolute;
+        right: 105px;
+        top: 134px;
+      }
+
+    }
+    @media  (max-width: 334px) {
+      .ios-btn,
+      .play-btn  {
+        height: 23px;
+        width: 73px;
+        border-radius: 18px;
+        font-size: 13px;
+     }
+     .ios-btn{
+      position: absolute;
+      right: 8px;
+      top: 140px;
+     }
+     .play-btn {
+       position: absolute;
+       right: 85px;
+       top: 140px;
+     }
+   }
   }
 }
-@media (min-width: 991px) {
-  .gamePage-cardBody {
-    // text-align: center;
-    padding: 20px;
-    padding-top: 1rem;
-  }
-  .moreInfonbtn {
-    height: 25px;
-    width: 65px;
-    border-radius: 12px;
-    text-align: center;
-    padding: 0;
-    font-size: 14px;
 
-  }
-  .logoimage {
-    position: absolute;
-    min-width: 125px;
-    min-height: 125px;
-    border-radius: 50%;
-    right: 9.5%;
-    top: 120px;
-  }
-  .gameCard{
-    border-radius: 25px;
-  } 
-}
 
-@media (min-width: 2000px) {
-  .gamePage-cardBody {
-    // text-align: center;
-    padding: 20px;
-    padding-top: 1rem;
-  }
-  .moreInfonbtn {
-    height: 25px;
-    width: 65px;
-    border-radius: 12px;
-    text-align: center;
-    padding: 0;
-    font-size: 14px;
 
-  }
-  .logoimage {
-    position: absolute;
-    min-width: 125px;
-    min-height: 125px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    right: 7.5%;
-    top: 115px;
-  }
-  .gameCard{
-    border-radius: 25px;
-  }
-}
+

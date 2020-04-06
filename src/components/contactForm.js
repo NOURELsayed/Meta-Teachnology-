@@ -5,7 +5,7 @@ import ContactFormWelPage from "./ContactForm-welPage";
 import MapContainer from './MapComponent'
 const ContactForm = () =>{
   return (
-    <Container   fluid>
+    <Container>
       <Row className="contactFormSection" >
         <Col  lg={6}>
           {/* <MapContainer/> */}

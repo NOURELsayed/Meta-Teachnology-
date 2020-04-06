@@ -13,7 +13,7 @@ const SignUpinitialState = {
 export const SignUpContext = createContext();
 
 const SignUpContextProvider = props => {
-  const [SignUpAuth, setSingupAuth] = useState(SignUpinitialState);
+  const [SignUpAuth] = useState(SignUpinitialState);
 
   const SignUpContextFunction = async (userSignup) => {
 //     console.log("userSignup",userSignup);

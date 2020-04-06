@@ -11,20 +11,16 @@ const ContactFormWelPage = ()  =>{
           <Form.Control type="text" placeholder="Name" required/>
         </Form.Group>
 
-        <Form.Group controlId="formBasicCheckbox">
-          <Form.Control type="Phone" placeholder="Password" required/>
-        </Form.Group>
-
         <Form.Group controlId="formBasicEmail">
           <Form.Control type="email" placeholder="Enter email" required/>
-          <Form.Text className="text-muted">
+          <Form.Text className="text-muted"  >
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
 
         <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" rows="3" placeholder="Type something"/>
+          <Form.Control as="textarea" rows="8" placeholder="Type something"/>
         </Form.Group>
         <Button variant="success" type="Send">
           Send
